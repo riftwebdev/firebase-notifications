@@ -1,5 +1,5 @@
 <?php
-namespace Riftweb\SuperSeeder\Providers;
+namespace Riftweb\FirebaseNotifications\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Riftweb\FirebaseNotifications\Classes\FcmNotification;
