@@ -1,0 +1,59 @@
+{
+    "name": "riftweb/firebase-notifications",
+    "description": "Effortlessly manage Firebase Cloud Messaging (FCM) notifications in your Laravel applications. This package simplifies sending FCM notifications with a clean and intuitive API, making it easy to integrate push notifications into your projects.",
+    "license": "MIT",
+    "keywords": [
+        "riftweb",
+        "laravel",
+        "firebase",
+        "fcm",
+        "notifications",
+        "push notifications",
+        "firebase cloud messaging",
+        "notification management",
+        "real-time notifications",
+        "flutter notifications",
+        "fcmv1"
+    ],
+    "authors": [
+        {
+            "name": "Leandro Santos",
+            "email": "geral@riftweb.com",
+            "homepage": "https://riftweb.com",
+            "role": "CEO"
+        }
+    ],
+    "homepage": "https://github.com/riftwebdev/firebase-notifications.git",
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
+        "google/cloud-binary-authorization": "^0.5.0",
+        "google/apiclient": "^2.12.1"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0",
+        "phpunit/phpunit": "^9.4|^10.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Riftweb\\FirebaseNotifications\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Riftweb\\FirebaseNotifications\\Providers\\FcmTokenServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "format": "php-cs-fixer fix --allow-risky=yes",
+        "analyse": "phpstan analyse"
+    }
+}
